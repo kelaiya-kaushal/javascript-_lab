@@ -1,0 +1,17 @@
+<!-- wap to count the number of words in a given sentence using js  -->
+<!DOCTYPE html>
+<html lang="en">    
+    <head>        
+        <meta charset="UTF-8">        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <title>Word Count</title>
+    </head>
+    <body>        
+        <script>            
+            let sentence = prompt("Enter a sentence: ");            
+            let words = sentence.trim().split(/\s+/);            
+            let wordCount = words.length;            
+            document.writeln("Number of words in the given sentence: " + wordCount + "<br>");        
+        </script>
+    </body>
+</html>

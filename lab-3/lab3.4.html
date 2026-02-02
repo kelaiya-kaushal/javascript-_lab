@@ -1,0 +1,34 @@
+         <!-- wap to add and remove items from a shopping cart using array methods using push,and pop -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping cart add/remove </title>
+ </head>
+ <body>
+    <button onclick="addItem()">Add </button>
+    <button onclick="removeItem()">Remove </button>
+    <div id="o"></div>
+    <script>
+        let cart = [];
+        function addItem() {
+            let item = prompt("Enter item to add to cart:");
+            cart.push(item);
+            displayCart();
+        }
+        function removeItem() {
+            if (cart.length === 0) {
+                alert("Cart is empty!");
+                return;
+            }
+            let item = cart.pop();
+            alert("Removed item: " + item);
+            displayCart();
+        }
+        function displayCart() {
+            document.getElementById("o").innerHTML = "Shopping Cart: " + cart.join(", ");
+        }
+    </script>
+ </body>
+ </html>

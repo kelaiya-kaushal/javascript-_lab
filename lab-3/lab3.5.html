@@ -1,0 +1,22 @@
+<!-- wap sort an arry of student marks and display the heigest and lower marks usinh promot input  -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student marks</title>
+ </head>
+ <body>
+    <script>
+        let marks = [85, 42, 78, 90, 66, 55, 99, 73];
+        marks.sort(function(a, b) {
+            return a - b;
+        });
+        let lowestMark = marks[0];
+        let highestMark = marks[marks.length - 1];
+        document.writeln("Sorted Marks: " + marks.join(", ") + "<br>");
+        document.writeln("Lowest Mark: " + lowestMark + "<br>");
+        document.writeln("Highest Mark: " + highestMark + "<br>");
+    </script>
+ </body>
+ </html>

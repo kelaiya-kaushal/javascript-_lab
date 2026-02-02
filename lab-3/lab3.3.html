@@ -1,0 +1,21 @@
+<!-- wap to check if a given string is a palindrome (read the same forward and backward) -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+    <body>
+        <script>
+            let str = prompt("Enter a string: ");
+            let reversedStr = str.split('').reverse().join('');
+            if (str === reversedStr) {
+                document.writeln("The string '" + str + "' is a palindrome.<br>");
+            } else {
+                document.writeln("The string '" + str + "' is not a palindrome.<br>");
+            }
+        </script>
+ </body>
+ </html>
+ 
