@@ -1,0 +1,20 @@
+<!-- 2.1 - WAP in js that accepts a number as input and prints its multiplication table up to 10 using a loop -->
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <input id = "n" placeholder="Enter a Number ">
+    <button id="b"> Submit </button>
+    <div id="o">  </div>
+    <script>
+        b.onclick=() =>{let p = Number(n.value);
+        for ( let i=1 ; i<=10 ; i++)
+        {
+            o.innerHTML += `${p} * ${i} = ${p*i} <br>`; 
+           
+        }
+    }
+    </script>
+</body>
+</html>
