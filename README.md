@@ -1,5 +1,4 @@
-
-Welcome to JavaScript_Lab ...
+# Welcome to JavaScript_Lab ...
 
 This repository contains practical implementations of:
 
